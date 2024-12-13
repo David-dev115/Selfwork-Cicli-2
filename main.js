@@ -22,20 +22,21 @@ if( num_y < 1 ) {
 
 // Seconda parte
 
-let conteggio = 0;
+let accumulator = 0;
 
-let n = 20;
+let counter = 0;
 
 
-for( let i = 0; i <= n; i++) {
+for( let i = 0; i <=20; i++) {
     
     if ( i % 2 != 0) { 
-        i + conteggio;     
+        accumulator = accumulator + i
+        counter ++
     }
     
-conteggio = (i + conteggio)/10;
-
 }
 
-console.log(conteggio);
+console.log(`La somma dei numeri dispari è ${accumulator}`);
+console.log(`La media dei numeri dispari è ${ accumulator/counter }  `);
+
 
